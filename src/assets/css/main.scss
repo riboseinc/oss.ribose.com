@@ -1,0 +1,27 @@
+---
+---
+@charset "utf-8";
+
+$icon-font-path: '{{ site.baseurl }}/assets/fonts/bootstrap/';
+$fa-font-path: '{{ site.baseurl }}/assets/fonts/font-awesome/';
+
+@import "bootstrap";
+@import "font-awesome";
+
+@import "layout/base/header";
+
+@font-face {
+  font-family: 'rb';
+  src: url('/assets/fonts/rb.woff') format('woff'),
+       url('/assets/fonts/rb.ttf') format('truetype');
+}
+
+.rb-ribose:before {
+  display: inline-block;
+  min-width: 3.35em;
+  -webkit-font-smoothing: antialiased;
+  font-family: "rb";
+  content: "\f13b";
+  font-style: normal;
+  font-size: 28px;
+}
