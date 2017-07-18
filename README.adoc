@@ -1,0 +1,26 @@
+= Ribose Open Source site
+
+== Install
+
+[source,bash]
+----
+npm install --global webpack
+gem install jekyll
+----
+
+== Build
+
+[source,bash]
+----
+scripts/build.sh
+----
+
+== Serve
+
+[source,bash]
+----
+scripts/serve.sh
+----
+
+The site can be viewed at `https://127.0.0.1:4000`.
+
