@@ -1,0 +1,56 @@
+.post-header {
+  margin-top: 40px;
+
+  .post-title {
+    color: #333;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 42px;
+    margin: 0 0 6px;
+  }
+
+  .post-publishing-info {
+    color: #AAA;
+    margin: 0 0 15px;
+    font-size: 16px;
+  }
+  .post-date, .post-author { font-style: italic; }
+}
+
+.post-content {
+  color: #666;
+  font-size: 20px;
+  line-height: 28px;
+
+  p {
+    margin-bottom: 28px;
+  }
+
+  p + figure {
+    margin: -14px 0 14px;
+  }
+}
+
+.sidebar {
+}
+
+.related-posts {
+  h2 {
+    font-size: 24px;
+    color: #777;
+    border-top: 6px solid lightgray;
+    margin-bottom: 12px;
+    padding-top: 12px;
+    margin-top: 0;
+  }
+
+  .posts {
+    font-size: 16px;
+    padding: 0;
+    list-style-type: none;
+
+    li + li {
+      margin-top: 6px;
+    }
+  }
+}

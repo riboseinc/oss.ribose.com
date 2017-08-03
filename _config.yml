@@ -17,8 +17,8 @@ source: ./src
 destination: ./public
 exclude: [node_modules/, scripts/, webpack/]
 
-paginate: 2
-paginate_path: "/blog/page/:num/"
+# paginate: 2
+# paginate_path: "/blog/page/:num/"
 
 gems:
   - jekyll-paginate

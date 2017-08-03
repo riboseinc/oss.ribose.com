@@ -1,0 +1,44 @@
+.post-listing {
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  .post-title {
+    color: #333;
+    cursor: pointer;
+    text-decoration: none;
+
+    h2 { 
+      font-size: 42px;
+      margin: 0 0 6px;
+    }
+  }
+  .post-publishing-info {
+    color: #AAA;
+    margin: 0 0 15px;
+    font-size: 16px;
+  }
+  .post-date, .post-author { font-style: italic; }
+  .post-author {}
+  .post-excerpt {
+    color: #666;
+    font-size: 20px;
+    margin: 0 0 15px;
+    text-align: justify;
+    padding-left: 15px;
+  }
+  .post-categories {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    padding-left: 15px;
+
+    .post-category {
+      display: inline-block;
+      color: #AAA;
+      float: left;
+      text-align: center;
+      margin-right: 6px;
+    }
+  }
+}

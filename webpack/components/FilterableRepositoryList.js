@@ -30,7 +30,11 @@ export default class FilterableRepositoryList extends Component {
   }
 
   componentDidMount() {
-    this.fetchRepos();
+    if (this.props.url) {
+      this.fetchRepos();
+    } else {
+      this.setState({ repos: this.props.repos });
+    }
   }
 
   componentWillReceiveProps(nextProps) {

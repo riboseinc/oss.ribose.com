@@ -1,28 +1,30 @@
 ---
 layout: default
 ---
-<div class="col-md-12">
-  {% for post in paginator.posts %}
+<div class="col-md-8">
+  {% for post in site.posts %}
 
-    <div class="row post">
-      <h2 class="post-title">
-        <a href="{{ post.url }}">
-          {{ post.title }}
-        </a>
-      </h2>
-      <div class="post-publishing-info">
-        <span class="post-date">{{ post.date }}</span>
-        <span class="post-author">{{ post.author }}</span>
-      </div>
-      <p class="post-excerpt">{{ post.excerpt }}</p>
+    <div class="post-listing row">
+      <a class="post-title" href="{{ post.url }}">
+        <h2>{{ post.title }}</h2>
+      </a>
+      <p class="post-publishing-info">
+        Published by <span class="post-author">{{ post.author }}</span>
+        on <span class="post-date">{{ post.date | date:'%B %e, %Y' }}</span>
+      </p>
+      <p class="post-excerpt">
+        {{ post.excerpt | remove:'<p>' | remove:'</p>' }}
+      </p>
       <ul class="post-categories">
         {% for category in post.categories %}
-          <li class="post-category">{{ category }}</li>
+          <li class="post-category">#{{ category }}</li>
         {% endfor %}
       </ul>
     </div>
 
   {% endfor %}
+
+  {% comment %}
 
   {% if paginator.previous_page or paginator.next_page %}
     <div class="row">
@@ -51,4 +53,6 @@ layout: default
       </nav>
     </div>
   {% endif %}
+
+  {% endcomment %}
 </div>

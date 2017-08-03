@@ -9,6 +9,9 @@ $fa-font-path: '{{ site.baseurl }}/assets/fonts/font-awesome/';
 @import "font-awesome";
 
 @import "layout/base/header";
+@import "pages/blog-post-listing";
+@import "pages/blog-post";
+@import "components/repo";
 
 @font-face {
   font-family: 'rb';
