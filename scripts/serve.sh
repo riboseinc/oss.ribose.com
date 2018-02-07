@@ -1,3 +1,3 @@
 #!/bin/bash
 webpack -w &
-jekyll serve
+bundle exec jekyll serve
