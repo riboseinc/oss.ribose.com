@@ -1,5 +1,9 @@
 = Ribose Open Source site
 
+image:https://travis-ci.org/riboseinc/oss.ribose.com.svg?branch=master["Build Status", link="https://travis-ci.org/riboseinc/oss.ribose.com"]
+image:https://codeclimate.com/github/riboseinc/oss.ribose.com/badges/gpa.svg["Code Climate Quality", link="https://codeclimate.com/github/riboseinc/oss.ribose.com"]
+image:https://codeclimate.com/github/riboseinc/oss.ribose.com/badges/coverage.svg["Code Climate Quality", link="https://codeclimate.com/github/riboseinc/oss.ribose.com/coverage"]
+
 == Install
 
 [source,bash]
