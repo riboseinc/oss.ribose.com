@@ -1,2 +1,2 @@
 #!/bin/bash
-webpack && jekyll build
+webpack && bundle exec jekyll build
