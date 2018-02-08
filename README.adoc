@@ -5,7 +5,7 @@
 [source,bash]
 ----
 npm install --global webpack
-gem install jekyll
+bundle
 ----
 
 == Build
